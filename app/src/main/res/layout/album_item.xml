@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="album"
+            type="com.coding.codingapplication.model.Album" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/mtrl_extended_fab_min_height"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="@dimen/material_font_1_3_box_collapsed_padding_top"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:background="#99000000"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="4dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/material_font_2_0_box_collapsed_padding_top"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:textStyle="bold"
+        tools:text="@{album.title}" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</layout>
