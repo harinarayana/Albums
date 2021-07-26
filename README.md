@@ -37,3 +37,15 @@ https://developer.android.com/training/testing/ui-testing/espresso-testing
 MockWebServer - 
 For validate and test request & response for HTTP/ HTTPS Calls.
 Reference Links: https://github.com/square/okhttp/tree/master/mockwebserver
+
+What is implemented here:
+- Consumed https://jsonplaceholder.typicode.com/albums API and displaying data in a recylerview
+- Also added offline support using Room DB and loading API data through Jetpack Paging Lib
+- Added minor animation while scrolling
+
+What can be done next?
+- Can extend this app by consuming other API's like https://jsonplaceholder.typicode.com/photos & https://jsonplaceholder.typicode.com/users
+- On click can display album id based photos in a grid view
+- Can club user info from users API and display next to Album title
+- Tapping on user name can load User information in another screen.
+
